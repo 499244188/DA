@@ -115,9 +115,30 @@ x:x标记
 D:菱形标记
 d:瘦菱形标记
 |：垂直线标记
+'''
 
+#多窗口
+
+from matplotlib import pyplot as plt
+import numpy as np
+
+plt.subplot2grid((6,6),(2,4))
+plt.show()
+
+plt.subplot2grid((4,4),(1,0),colspan=4)
+'''
+colspan:横向延伸
+rowspan:纵向延伸
+'''
+import matplotlib.gridspec as gridspec
+gs = gridspec.GridSpec(3,3)
+
+ax1 = plt.subplot(gs[0,:])
 
 '''
+gs[x0:x9,y0:y9]
+'''
+
 
 
 
